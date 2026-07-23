@@ -1,0 +1,39 @@
+name: Compile and Push Resume
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Compile typst file
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: resume.typ
+          output_file: resume.pdf
+
+      - name: Create output directory
+        run: mkdir output
+
+      - name: Move PDF to output directory
+        run: mv resume.pdf output/
+
+      - name: Push to destination repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.GH_PAT }}
+        with:
+          source-directory: 'output'
+          destination-github-username: 'louis-pasquier'
+          destination-repository-name: 'Portfolio'
+          user-email: ${{ github.actor }}@users.noreply.github.com
+          target-branch: main
+          target-directory: src/assets
+          commit-message: 'Automated resume update'
+          keep-files: false
