@@ -36,4 +36,4 @@ jobs:
           target-branch: main
           target-directory: src/assets
           commit-message: 'Automated resume update'
-          keep-files: false
+          keep-files: true
