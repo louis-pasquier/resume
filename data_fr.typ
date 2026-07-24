@@ -20,7 +20,7 @@
   (
     title: "Développeur backend",
     subtitle: "Fair IT",
-    dates: "Jun 2022 -- Present", 
+    dates: "2022 - aujourd'hui", 
     location: "Fribourg",
     bullets: (
       "Divers développement backend pour clients et R&D",
@@ -31,7 +31,7 @@
   (
     title: "Moniteur d'escalade", 
     subtitle: "L'Entrepôt SA",
-    dates: "Aug 2019 -- May 2022", 
+    dates: "2023 - 2026", 
     location: "Bulle",
     bullets: (
       "Cours hebdomaires pour adultes et enfants",
@@ -39,12 +39,12 @@
     ),
   ),
   (
-    title: "Job d'étudiant en intendance", 
+    title: "Job d'étudiant en intendance",
     subtitle: "Foyer St-Joseph",
-    dates: "Jun 2018 -- Aug 2018", 
+    dates: "2020 - 2023",
     location: "Morlon",
     bullets: (
-      "Vaisselle, ménage",
+      "Mise en place de la table pour les repas, vaisselle, nettoyage des surfaces",
     ),
   ),
 )
