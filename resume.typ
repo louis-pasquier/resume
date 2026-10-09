@@ -4,7 +4,7 @@
 // Usage: edit the values in the `data.typ` file,
 // then compile with:  typst compile resume.typ
 // ============================================================
-#import "data_fr.typ": name, role, email, phone, city, github, linkedin, skills, experiences, projects, education_entries, certifications
+#import "data_fr.typ": name, role, email, phone, city, website, github, linkedin, skills, experiences, projects, education_entries, certifications
 
 #let accent = rgb("#1f4e8c")
 #let muted = rgb("#5a5a5a")
@@ -78,6 +78,7 @@
     #text(size: 10pt)[
       #email \
       #phone #h(4pt) | #h(4pt) #city \
+      #link(website)[#website.replace("https://", "")] \
       #link(github)[#github.replace("https://", "")] \
       #link(linkedin)[#linkedin.replace("https://", "")]
     ]
@@ -94,10 +95,6 @@
     ]
   ]
 )
-
-#v(10pt)
-#line(length: 100%, stroke: 0.4pt + muted)
-#v(4pt)
 
 // ---------- skills ----------
 #heading-bar("Compétences techniques")

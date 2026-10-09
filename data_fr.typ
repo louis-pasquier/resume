@@ -7,20 +7,30 @@
 #let email = "louis.pasquier@outlook.com"
 #let phone = "076 432 04 72"
 #let city = "1636 Broc"
+#let website = "https://louisme.ch"
 #let github = "https://github.com/louis-pasquier"
 #let linkedin = "https://linkedin.com/in/pasquier-louis"
 
 #let skills = (
-  (category: "Languages", items: "Java, Go, Python, TypeScript, C, C++, Kotlin, Swift, Flutter"),
+  (category: "Languages", items: "Java, Go, Python, TypeScript, C, C++, Kotlin, Swift, Flutter, Rust"),
   (category: "Frameworks", items: "Spring Boot, FastAPI, React, React Native, VueJS"),
   (category: "Backend / Infra", items: "Docker, Kubernetes, Argo CD, PostgreSQL, MySQL"),
 )
 
 #let experiences = (
   (
+    title: "Aide animateur et administration (service civil)",
+    subtitle: "EMS de la Sionge",
+    dates: "2026 - 2027", 
+    location: "Vuadens",
+    bullets: (
+      "Aide et accompagnement lors de différentes animations avec les résidents",
+    ),
+  ),
+  (
     title: "Développeur backend",
     subtitle: "Fair IT",
-    dates: "2022 - aujourd'hui", 
+    dates: "2022 - 2026", 
     location: "Fribourg",
     bullets: (
       "Divers développement backend pour clients et R&D",
