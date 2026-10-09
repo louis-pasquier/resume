@@ -34,5 +34,5 @@ jobs:
           destination-repository-name: 'Portfolio'
           user-email: ${{ github.actor }}@users.noreply.github.com
           target-branch: main
-          target-directory: src/assets/resume
+          target-directory: public
           commit-message: 'Automated resume update'
